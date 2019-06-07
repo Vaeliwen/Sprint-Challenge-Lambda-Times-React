@@ -38,11 +38,11 @@ export default class Content extends Component {
           of the items from cardData. 
         - else, it should only return those cards whose 'tab' matched this.state.selected.  
     */
-      if(this.state.selected == 'all') {
+      if(this.state.selected === 'all') {
       return this.state.cards;
       }
       else {
-        let CardDeck = cardData.filter((card) => {return card.tab == this.state.selected})
+        let CardDeck = cardData.filter((card) => {return card.tab === this.state.selected})
         return CardDeck;
       }
   }
