@@ -16,4 +16,11 @@ const Tabs = props => {
 };
 
 // Make sure to use PropTypes to validate your types!
+Tabs.propType = PropType.shape({
+  tab: PropType.string,
+  key: PropType.number,
+  selectedTab: PropType.string,
+  selectTabHandler: PropType.func
+})
+
 export default Tabs;

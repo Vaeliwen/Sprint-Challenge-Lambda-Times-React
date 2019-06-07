@@ -16,7 +16,7 @@ const Card = props => {
 };
 
 Card.propTypes = {
-  cards: PropTypes.shape({
+  card: PropTypes.arrayOf({
     headline: PropTypes.string,
     tab: PropTypes.string,
     img: PropTypes.string,
